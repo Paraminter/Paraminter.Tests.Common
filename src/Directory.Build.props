@@ -1,0 +1,24 @@
+﻿<Project>
+
+    <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />
+
+    <PropertyGroup>
+        <IsPackable>true</IsPackable>
+        <Owners>SharpAttributeParser</Owners>
+        <Authors>ErikWe</Authors>
+        <PackageProjectUrl>https://github.com/SharpAttributeParser/SharpAttributeParser.Common.Tests</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/SharpAttributeParser/SharpAttributeParser.Common.Tests</RepositoryUrl>
+        <GenerateDocumentationFile>false</GenerateDocumentationFile>
+        <PackageReadmeFile>README.nupkg.md</PackageReadmeFile>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <NeutralLanguage>en</NeutralLanguage>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <None Include="README.nupkg.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
+
+</Project>
