@@ -10,6 +10,7 @@
         <RepositoryUrl>https://github.com/SharpAttributeParser/SharpAttributeParser.Common.Tests</RepositoryUrl>
         <GenerateDocumentationFile>false</GenerateDocumentationFile>
         <PackageReadmeFile>README.nupkg.md</PackageReadmeFile>
+        <PackageIcon>Logo.png</PackageIcon>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
         <NeutralLanguage>en</NeutralLanguage>
@@ -19,6 +20,11 @@
     
     <ItemGroup>
         <None Include="README.nupkg.md" Pack="true" PackagePath="\" />
+        <None Include="$(PkgSharpAttributeParser_Logo)\Logo.png" Pack="true" PackagePath="\" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="SharpAttributeParser.Logo" PrivateAssets="all" GeneratePathProperty="true" />
     </ItemGroup>
 
 </Project>
