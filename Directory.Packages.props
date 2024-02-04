@@ -5,6 +5,10 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="4.8.0" />
+    </ItemGroup>
+
+    <ItemGroup>
         <PackageVersion Include="SharpAttributeParser.Logo" Version="1.0.1" />
     </ItemGroup>
 
