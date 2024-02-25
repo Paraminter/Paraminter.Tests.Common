@@ -6,8 +6,8 @@
         <IsPackable>true</IsPackable>
         <Owners>SharpAttributeParser</Owners>
         <Authors>ErikWe</Authors>
-        <PackageProjectUrl>https://github.com/SharpAttributeParser/SharpAttributeParser.Common.Tests</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/SharpAttributeParser/SharpAttributeParser.Common.Tests</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/SharpAttributeParser/SharpAttributeParser.Tests.Common</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/SharpAttributeParser/SharpAttributeParser.Tests.Common</RepositoryUrl>
         <GenerateDocumentationFile>false</GenerateDocumentationFile>
         <PackageReadmeFile>README.nupkg.md</PackageReadmeFile>
         <PackageIcon>Logo.png</PackageIcon>
