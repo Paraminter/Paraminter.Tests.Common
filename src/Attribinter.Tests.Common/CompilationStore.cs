@@ -1,4 +1,4 @@
-﻿namespace SharpAttributeParser;
+﻿namespace Attribinter;
 
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;

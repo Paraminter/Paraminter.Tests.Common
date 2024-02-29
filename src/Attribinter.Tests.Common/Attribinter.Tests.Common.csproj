@@ -2,13 +2,13 @@
 
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
-        <RootNamespace>SharpAttributeParser</RootNamespace>
+        <RootNamespace>Attribinter</RootNamespace>
     </PropertyGroup>
 
     <PropertyGroup>
-        <Title>SharpAttributeParser.Tests.Common</Title>
+        <Title>Attribinter.Tests.Common</Title>
         <Description>
-            Provides common test-related functionality used by 'SharpAttributeParser'.
+            Provides common test-related functionality used by 'Attribinter'.
         </Description>
     </PropertyGroup>
 
