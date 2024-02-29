@@ -8,7 +8,7 @@
     <PropertyGroup>
         <Title>Attribinter.Tests.Common</Title>
         <Description>
-            Provides common test-related functionality used by 'Attribinter'.
+            Provides common test-related functionality used by Attribinter.
         </Description>
     </PropertyGroup>
 
