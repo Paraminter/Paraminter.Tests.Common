@@ -9,7 +9,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageVersion Include="SharpAttributeParser.Logo" Version="1.0.1" />
+        <PackageVersion Include="Attribinter.Logo" Version="1.0.3" />
     </ItemGroup>
 
     <ItemGroup>

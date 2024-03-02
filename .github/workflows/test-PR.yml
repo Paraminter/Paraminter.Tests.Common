@@ -15,4 +15,4 @@ jobs:
     steps:
 
       - name: Test PR
-        uses: SharpAttributeParser/actions/dotnet/nuget/test@v0
+        uses: Attribinter/actions/dotnet/nuget/test@v0
