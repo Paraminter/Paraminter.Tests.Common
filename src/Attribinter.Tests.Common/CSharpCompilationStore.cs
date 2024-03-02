@@ -11,14 +11,14 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 
-public static class CompilationStore
+public static class CSharpCompilationStore
 {
-    private static Compilation? EmptyCompilation;
+    private static CSharpCompilation? EmptyCompilation;
 
     private static readonly CSharpParseOptions ParseOptions = new(languageVersion: LanguageVersion.CSharp11);
     private static readonly CSharpCompilationOptions CompilationOptions = new(OutputKind.DynamicallyLinkedLibrary);
 
-    public static Compilation GetCompilation(string source)
+    public static CSharpCompilation GetCompilation(string source)
     {
         var emptyCompilation = EmptyCompilation ??= CreateEmptyCompilation();
 
@@ -27,7 +27,7 @@ public static class CompilationStore
         return emptyCompilation.AddSyntaxTrees(syntaxTree);
     }
 
-    public static async Task<(Compilation, AttributeData, AttributeSyntax)> GetComponents(string source, string typeName)
+    public static async Task<(CSharpCompilation, AttributeData, AttributeSyntax)> GetComponents(string source, string typeName)
     {
         var compilation = GetCompilation(source);
 
