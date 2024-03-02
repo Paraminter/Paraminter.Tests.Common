@@ -11,7 +11,7 @@ public static class TypedConstantStore
     public static async Task<TypedConstant> GetNext()
     {
         var source = $$"""
-            public class CustomAttribute : Attribute
+            public class CustomAttribute : System.Attribute
             {
                 public CustomAttribute(int value) { }
             }
