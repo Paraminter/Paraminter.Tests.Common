@@ -5,7 +5,7 @@ using Microsoft.CodeAnalysis;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 
-internal sealed class CustomAttributeData : AttributeData
+public sealed class CustomAttributeData : AttributeData
 {
     new public INamedTypeSymbol? AttributeClass { get; init; }
     new public IMethodSymbol? AttributeConstructor { get; init; }
