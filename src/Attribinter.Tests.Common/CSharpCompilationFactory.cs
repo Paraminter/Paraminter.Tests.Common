@@ -16,7 +16,7 @@ public static class CSharpCompilationFactory
     private static readonly CSharpParseOptions ParseOptions = new(languageVersion: LanguageVersion.CSharp11);
     private static readonly CSharpCompilationOptions CompilationOptions = new(OutputKind.DynamicallyLinkedLibrary);
 
-    public static CSharpCompilation GetCompilation(string source)
+    public static CSharpCompilation Create(string source)
     {
         var syntaxTree = CSharpSyntaxTree.ParseText(source, ParseOptions);
 
