@@ -20,7 +20,7 @@ public static class TypedConstantStore
 
         Current += 1;
 
-        var compilation = CSharpCompilationFactory.GetCompilation(source);
+        var compilation = CSharpCompilationFactory.Create(source);
 
         return compilation.GetTypeByMetadataName("Foo")!.GetAttributes()[0].ConstructorArguments[0];
     }
