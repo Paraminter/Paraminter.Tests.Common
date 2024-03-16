@@ -2,42 +2,25 @@
 
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
 
-public static class CSharpCompilationStore
+public static class CSharpCompilationFactory
 {
-    private static CSharpCompilation? EmptyCompilation;
+    private static readonly CSharpCompilation EmptyCompilation = CreateEmptyCompilation();
 
     private static readonly CSharpParseOptions ParseOptions = new(languageVersion: LanguageVersion.CSharp11);
     private static readonly CSharpCompilationOptions CompilationOptions = new(OutputKind.DynamicallyLinkedLibrary);
 
     public static CSharpCompilation GetCompilation(string source)
     {
-        var emptyCompilation = EmptyCompilation ??= CreateEmptyCompilation();
-
         var syntaxTree = CSharpSyntaxTree.ParseText(source, ParseOptions);
 
-        return emptyCompilation.AddSyntaxTrees(syntaxTree);
-    }
-
-    public static async Task<(CSharpCompilation, AttributeData, AttributeSyntax)> GetComponents(string source, string typeName)
-    {
-        var compilation = GetCompilation(source);
-
-        var type = compilation.GetTypeByMetadataName(typeName)!;
-
-        var attributeData = type.GetAttributes()[0];
-
-        var syntax = (AttributeSyntax)await attributeData.ApplicationSyntaxReference!.GetSyntaxAsync();
-
-        return (compilation, attributeData, syntax);
+        return EmptyCompilation.AddSyntaxTrees(syntaxTree);
     }
 
     private static CSharpCompilation CreateEmptyCompilation()

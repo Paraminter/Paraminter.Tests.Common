@@ -2,13 +2,11 @@
 
 using Microsoft.CodeAnalysis;
 
-using System.Threading.Tasks;
-
 public static class TypedConstantStore
 {
     private static int Current;
 
-    public static async Task<TypedConstant> GetNext()
+    public static TypedConstant GetNext()
     {
         var source = $$"""
             public class CustomAttribute : System.Attribute
@@ -22,8 +20,8 @@ public static class TypedConstantStore
 
         Current += 1;
 
-        var (_, attributeData, _) = await CSharpCompilationStore.GetComponents(source, "Foo");
+        var compilation = CSharpCompilationFactory.GetCompilation(source);
 
-        return attributeData.ConstructorArguments[0];
+        return compilation.GetTypeByMetadataName("Foo")!.GetAttributes()[0].ConstructorArguments[0];
     }
 }
