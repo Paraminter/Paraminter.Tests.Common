@@ -33,7 +33,7 @@ public static class CSharpCompilationFactory
         return CSharpCompilation.Create("FakeAssembly", references: references, options: CompilationOptions);
     }
 
-    public static IEnumerable<Assembly> ListAssemblies()
+    private static List<Assembly> ListAssemblies()
     {
         Queue<Assembly> unresolvedAssemblies = new();
         List<Assembly> resolvedAssemblies = [];
