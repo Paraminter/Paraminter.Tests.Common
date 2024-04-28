@@ -4,26 +4,24 @@
 
     <PropertyGroup>
         <IsPackable>true</IsPackable>
+
         <Owners>Attribinter</Owners>
         <Authors>ErikWe</Authors>
         <PackageProjectUrl>https://github.com/Attribinter/Attribinter.Tests.Common</PackageProjectUrl>
         <RepositoryUrl>https://github.com/Attribinter/Attribinter.Tests.Common</RepositoryUrl>
-        <GenerateDocumentationFile>false</GenerateDocumentationFile>
         <PackageReadmeFile>README.nupkg.md</PackageReadmeFile>
         <PackageIcon>Logo.png</PackageIcon>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-        <NeutralLanguage>en</NeutralLanguage>
+
         <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     </PropertyGroup>
     
     <ItemGroup>
         <None Include="README.nupkg.md" Pack="true" PackagePath="\" />
-        <None Include="$(PkgAttribinter_Logo)\Logo.png" Pack="true" PackagePath="\" />
-    </ItemGroup>
+        <None Include="$(PkgAttribinter_Logo)\Logo.png" Pack="true" PackagePath="\" Visible="false" />
 
-    <ItemGroup>
         <PackageReference Include="Attribinter.Logo" PrivateAssets="all" GeneratePathProperty="true" />
     </ItemGroup>
 

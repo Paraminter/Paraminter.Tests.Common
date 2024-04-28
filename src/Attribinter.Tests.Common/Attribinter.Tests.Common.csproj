@@ -2,14 +2,11 @@
 
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
-        <RootNamespace>Attribinter</RootNamespace>
-    </PropertyGroup>
 
-    <PropertyGroup>
+        <RootNamespace>Attribinter</RootNamespace>
+
         <Title>Attribinter.Tests.Common</Title>
-        <Description>
-            Provides common test-related functionality used by Attribinter.
-        </Description>
+        <Description>Provides common test-related functionality used by Attribinter.</Description>
     </PropertyGroup>
 
     <ItemGroup>
