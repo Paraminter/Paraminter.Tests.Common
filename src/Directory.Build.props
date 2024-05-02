@@ -5,10 +5,10 @@
     <PropertyGroup>
         <IsPackable>true</IsPackable>
 
-        <Owners>Attribinter</Owners>
+        <Owners>Paraminter</Owners>
         <Authors>ErikWe</Authors>
-        <PackageProjectUrl>https://github.com/Attribinter/Attribinter.Tests.Common</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/Attribinter/Attribinter.Tests.Common</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/Paraminter/Paraminter.Tests.Common</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/Paraminter/Paraminter.Tests.Common</RepositoryUrl>
         <PackageReadmeFile>README.nupkg.md</PackageReadmeFile>
         <PackageIcon>Logo.png</PackageIcon>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -20,9 +20,9 @@
     
     <ItemGroup>
         <None Include="README.nupkg.md" Pack="true" PackagePath="\" />
-        <None Include="$(PkgAttribinter_Logo)\Logo.png" Pack="true" PackagePath="\" Visible="false" />
+        <None Include="$(PkgParaminter_Logo)\Logo.png" Pack="true" PackagePath="\" Visible="false" />
 
-        <PackageReference Include="Attribinter.Logo" PrivateAssets="all" GeneratePathProperty="true" />
+        <PackageReference Include="Paraminter.Logo" PrivateAssets="all" GeneratePathProperty="true" />
     </ItemGroup>
 
 </Project>

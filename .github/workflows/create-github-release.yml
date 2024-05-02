@@ -17,6 +17,6 @@ jobs:
     steps:
 
       - name: Create GitHub Release
-        uses: Attribinter/actions/dotnet/nuget/create-release@v0
+        uses: Paraminter/actions/dotnet/nuget/create-release@v0
         with:
           token: ${{ secrets.TRIGGER_TOKEN }}

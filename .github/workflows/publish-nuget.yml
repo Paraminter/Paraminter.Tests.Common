@@ -16,7 +16,7 @@ jobs:
     steps:
 
       - name: Publish Packages
-        uses: Attribinter/actions/dotnet/nuget/release-to-nuget@v0
+        uses: Paraminter/actions/dotnet/nuget/release-to-nuget@v0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           nuget-token: ${{ secrets.NUGET_API_KEY }}

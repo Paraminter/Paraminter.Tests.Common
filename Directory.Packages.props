@@ -5,11 +5,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageVersion Include="Attribinter.Logo" Version="1.0.3" />
-
         <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="4.8.0" />
 
-        <PackageVersion Include="SonarAnalyzer.CSharp" Version="9.16.0.82469" />
+        <PackageVersion Include="Paraminter.Logo" Version="2.0.0-alpha.10" />
+
+        <PackageVersion Include="SonarAnalyzer.CSharp" Version="9.24.0.89429" />
 
         <PackageVersion Include="StyleCop.Analyzers" Version="1.2.0-beta.556" />
     </ItemGroup>

@@ -3,10 +3,10 @@
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
 
-        <RootNamespace>Attribinter</RootNamespace>
+        <RootNamespace>Paraminter</RootNamespace>
 
-        <Title>Attribinter.Tests.Common</Title>
-        <Description>Provides common test-related functionality used by Attribinter.</Description>
+        <Title>Paraminter.Tests.Common</Title>
+        <Description>Provides common test-related functionality used by Paraminter.</Description>
     </PropertyGroup>
 
     <ItemGroup>
