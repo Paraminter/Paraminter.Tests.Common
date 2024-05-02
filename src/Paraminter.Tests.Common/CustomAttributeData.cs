@@ -1,4 +1,4 @@
-﻿namespace Attribinter;
+﻿namespace Paraminter;
 
 using Microsoft.CodeAnalysis;
 

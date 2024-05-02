@@ -15,4 +15,4 @@ jobs:
     steps:
 
       - name: Test PR
-        uses: Attribinter/actions/dotnet/nuget/test@v0
+        uses: Paraminter/actions/dotnet/nuget/test@v0
